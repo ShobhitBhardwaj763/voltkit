@@ -90,7 +90,8 @@ streamlit run voltkit/streamlit_ui/signal_generator_app.py
 - `fft_explorer_app.py`
 - `rc_visualizer_app.py`
 - `phasor_plotter_app.py`
-- 'phasor_diagram_visualizer_app.py' 
+- `phasor_diagram_visualizer_app.py`
+
 
 ---
 ## Example files to understand
