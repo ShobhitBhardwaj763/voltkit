@@ -82,6 +82,12 @@ VoltKit also includes pre-built apps for learning and visualizing concepts. Run 
 ```bash
 streamlit run voltkit/streamlit_ui/signal_generator_app.py
 ```
+(If not work, then open Command Prompt and use this method)
+```bash
+cd voltkit
+streamlit run voltkit/streamlit_ui/signal_generator_app.py
+```
+
 
 ### Available Apps:
 
@@ -89,7 +95,7 @@ streamlit run voltkit/streamlit_ui/signal_generator_app.py
 - `bode_simulator_app.py`
 - `fft_explorer_app.py`
 - `rc_visualizer_app.py`
-- `phasor_plotter_app.py`
+- `phasor_visualizer_app.py`
 - `phasor_diagram_visualizer_app.py`
 
 
