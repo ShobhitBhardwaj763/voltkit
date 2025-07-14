@@ -95,19 +95,22 @@ streamlit run voltkit/streamlit_ui/signal_generator_app.py
 
 ---
 ## Example files to understand
-- 'basic_usage.py'
-- 'signal_genrator.py'
-- 'rc_response.py'
-- 'power_analysis.py'
-- 'phasor_diagram_example.py'
-- 'plot_bode_rlc.py'
-- 'phasor_demo.py'
-- 'lowpass_filter_demo.py'
-- 'fft_analysis.py'
-- 'ac_vs_dc_example.py'
+- `basic_usage.py`
+- `signal_genrator.py`
+- `rc_response.py`
+- `power_analysis.py`
+- `phasor_diagram_example.py`
+- `plot_bode_rlc.py`
+- `phasor_demo.py`
+- `lowpass_filter_demo.py`
+- `fft_analysis.py`
+- `ac_vs_dc_example.py`
 
 ## To run example files, use this method
+
+```bash
 python examples/example_file_name.py
+```
 
 ##  Who Is It For?
 
