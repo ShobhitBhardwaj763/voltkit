@@ -1,0 +1,24 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.env/
+.venv/
+
+# Packaging
+*.egg-info/
+build/
+dist/
+
+# OS / Editor folders
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Jupyter (if you add any)
+.ipynb_checkpoints/
