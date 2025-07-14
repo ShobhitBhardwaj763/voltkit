@@ -36,7 +36,7 @@ Electrical engineering is filled with complex formulas and repetitive calculatio
 Clone the repo and install in development mode:
 
 ```bash
-git clone https://github.com/yourusername/voltkit.git
+git clone https://github.com/ShobhitBhardwaj763/voltkit.git
 cd voltkit
 pip install -e .
 ```
@@ -90,11 +90,23 @@ streamlit run voltkit/streamlit_ui/signal_generator_app.py
 - `fft_explorer_app.py`
 - `rc_visualizer_app.py`
 - `phasor_plotter_app.py`
-- 'phasor_diagram_visualizer_app.py' ✅ *(New in v1.0)*
+- 'phasor_diagram_visualizer_app.py' 
 
 ---
-## Example files to understnd
+## Example files to understand
+- 'basic_usage.py'
+- 'signal_genrator.py'
+- 'rc_response.py'
+- 'power_analysis.py'
+- 'phasor_diagram_example.py'
+- 'plot_bode_rlc.py'
+- 'phasor_demo.py'
+- 'lowpass_filter_demo.py'
+- 'fft_analysis.py'
+- 'ac_vs_dc_example.py'
 
+## To run example files, use this method
+python examples/example_file_name.py
 
 ##  Who Is It For?
 
