@@ -48,9 +48,12 @@ pip install -e .
 ### Ohm's Law
 ```python
 from voltkit.core import voltage, resistance, current
-v = voltage(i=2, r=5)           # 10 volts
-r = resistance(v=10, i=2)       # 5 ohms
-i = current(v=10, r=5)          # 2 amps
+# voltage(i,r)
+# resistance(v,i)
+# current(v,r)
+v = voltage(2, 5)           # 10 volts
+r = resistance(10,2)       # 5 ohms
+i = current(10,5)          # 2 amps
 ```
 
 ### RLC Impedance
