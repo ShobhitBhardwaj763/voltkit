@@ -1,6 +1,5 @@
 from setuptools import setup, find_packages
 
-# Fix UnicodeDecodeError on Windows by explicitly using UTF-8
 with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
@@ -11,8 +10,8 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Shobhit Bhardwaj",
-    author_email="email@example.com",  # Optional: add real email or remove line
-    url="",  # Replace with your GitHub repo URL after upload
+    author_email="voltkit.dev@gmail.com",  
+    url="https://github.com/ShobhitBhardwaj763/voltkit",  
     packages=find_packages(),
     install_requires=[
         "numpy",
