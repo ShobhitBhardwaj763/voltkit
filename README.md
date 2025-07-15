@@ -63,7 +63,7 @@ z_c = capacitor(1e-6, freq=1000)       # -159.1j Ω
 
 ### Phasor Diagram for RL Circuit
 ```python
-from voltkit.core.phasor_diagram import plot_rl_phasor_diagram
+from voltkit.core import plot_rl_phasor_diagram
 plot_rl_phasor_diagram(R=10, L=0.1, I=1, f=50)
 ```
 
