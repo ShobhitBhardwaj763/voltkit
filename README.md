@@ -70,9 +70,23 @@ plot_rl_phasor_diagram(R=10, L=0.1, I=1, f=50)
 ### Generate a Sine Wave
 ```python
 from voltkit.core import sine_wave
-t, y = sine_wave(freq=50, duration=1, fs=1000)
+t, y = sine_wave(freq=50, duration=1, sample_rate=1000, amp=5)
 ```
 
+## To Plot the sin wave
+```python
+from voltkit.core import sine_wave
+import matplotlib.pyplot as plt
+t, y = sine_wave(freq=50, duration=1, sample_rate=1000, amp=5)
+
+plt.figure(figsize=(12, 8))
+plt.plot(t, y, label='Sine Wave')
+plt.ylabel('Voltage (V)')
+plt.legend()
+plt.grid()
+plt.show()
+
+```
 ---
 
 ## 🖥️ Interactive Streamlit Apps
