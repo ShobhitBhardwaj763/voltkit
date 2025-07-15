@@ -33,6 +33,12 @@ Electrical engineering is filled with complex formulas and repetitive calculatio
 
 ## ⚙️ Installation
 
+```
+pip install voltkit
+```
+
+Or you can also
+
 Clone the repo and install in development mode:
 
 ```bash
@@ -40,6 +46,10 @@ git clone https://github.com/ShobhitBhardwaj763/voltkit.git
 cd voltkit
 pip install -e .
 ```
+
+## Voltkit v1.0 Collab Notebook with examples
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gL6y9mrg4zuumT950I7BGJqbdwQnsePH)
 
 ---
 
@@ -134,6 +144,9 @@ streamlit run voltkit/streamlit_ui/signal_generator_app.py
 ```bash
 python examples/example_file_name.py
 ```
+
+Or just open the rulebook google collab notebook
+
 
 ##  Who Is It For?
 
