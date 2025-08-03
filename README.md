@@ -138,14 +138,14 @@ print("Total Harmonics Distortion": compute_thd(y_scaled))
 
 ## 🖥️ Explore Interactivily
 
-```
+
 
 Visit our live **VoltKit Simulation Website** built with Streamlit:
-👉 [https://voltkit-web.streamlit.app](https://voltkit-web.streamlit.app)
+👉 ```[https://voltkit-web.streamlit.app](https://voltkit-web.streamlit.app)```
 
 No installation needed, just open in your browser and visualize concepts!
 
-```
+
 
 
 ### 🧪 Available Simulations on Website
@@ -206,11 +206,11 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## Acknowledgements
 
-> NumPy - numerical computing
-> SciPy - scientific functions
-> Pandas - data handling
-> Streamlit - interactive web apps
-> Matplotlib - plotting
+- NumPy - numerical computing
+- SciPy - scientific functions
+- Pandas - data handling
+- Streamlit - interactive web apps
+- Matplotlib - plotting
 
 Special thanks to the open-source community.
 
