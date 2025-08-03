@@ -1,7 +1,7 @@
 
 # Examples
 
-from voltkit.core.phasor_diagram import (
+from voltkit.core import (
     plot_rl_phasor_diagram,
     plot_rc_phasor_diagram,
     plot_rlc_phasor_diagram

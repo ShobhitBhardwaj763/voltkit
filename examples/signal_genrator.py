@@ -47,3 +47,7 @@ plt.grid()
 plt.tight_layout()
 plt.suptitle('Generated Signals', fontsize=16, y=1.02)
 plt.show()
+
+# Load and Signal Analysis
+
+

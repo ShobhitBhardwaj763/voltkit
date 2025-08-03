@@ -1,6 +1,8 @@
 
 # ⚡ VoltKit — The Open Toolkit for Electrical & Electronics Engineering
 
+![VoltKit Logo](https://voltkit-web.streamlit.app/~/+/media/8bde6074b183823d5f6a8a36b003542b1c958619087af9163f1e5aa1.png)
+
 VoltKit is an open-source Python library designed to make electrical and electronics engineering more practical, visual, and beginner-friendly.
 
 From Ohm's Law to Phasor Diagrams, from FFTs to Streamlit-powered simulations — VoltKit helps students, educators, and makers bring theoretical concepts to life using code.
@@ -27,7 +29,10 @@ Electrical engineering is filled with complex formulas and repetitive calculatio
 | v0.3    | Signal generation (sine, square, triangle, DC) |
 | v0.4    | Filters (Low-pass, High-pass), Bode Plots |
 | v0.5    | FFT Analysis, RC Step Response |
-| v1.0    | Phasor Math, RL/RC/RLC Phasor Diagrams, Time-domain Signal Generator |
+| v1.0    | Phasor Math, RL/RC/RLC Phasor Diagrams, Time-domain Signal
+Generator
+| v1.0.1  | Real Signal Importing in (csv, wav) formets, Harmonics,scaling, Signal Stats, Plotting Signal |
+ 
 
 ---
 
@@ -100,30 +105,56 @@ plt.grid()
 plt.show()
 
 ```
+
+## Real Signal Processing (v1.0.1)
+
+# Load, analyze and visualize real-world signals easily:
+```python
+from voltkit.core import (load_csv_signal, add_harmonics, scale_signal, compute_rms, peak_to_peak, signal_energy, compute_thd, plot_signal)
+
+# Load signal from CSV file and plot signal
+t,y = load_csv_signal("signal.csv")
+plot_signal(t,y, title="Sample Signal")
+
+# Add Harmonics
+# Base signal with harmonics
+harmonics_dict = {3: 0.5, 5: 0.3}  # Add 3rd and 5th harmonics
+t,y = sine_wave(freq=50, amp=5, duration=0.1, fs=5000 )
+t,y_harmonic = add_harmonics(t,y, freq, harmonics_dict)
+plot_signal(t,y_harmonic, title="Signal with Harmonics")
+
+# Scale the harmonic signal
+y_scaled = scale_signal(y_harmonic, factor=2.0)
+plot_signal(t, y_scaled, title="Scaled Signal (x2)")
+
+# Analyze the signal
+print("RMS", compute_rms(y_scaled))
+print("Total Harmonics Distortion": compute_thd(y_scaled))
+
+
+
+```
 ---
 
-## 🖥️ Interactive Streamlit Apps
+## 🖥️ Explore Interactivily
 
-VoltKit also includes pre-built apps for learning and visualizing concepts. Run them like this:
-
-```bash
-streamlit run voltkit/streamlit_ui/signal_generator_app.py
 ```
-(If not work, then open Command Prompt and use this method)
-```bash
-cd voltkit
-streamlit run voltkit/streamlit_ui/signal_generator_app.py
+
+Visit our live **VoltKit Simulation Website** built with Streamlit:
+👉 [https://voltkit-web.streamlit.app](https://voltkit-web.streamlit.app)
+
+No installation needed, just open in your browser and visualize concepts!
+
 ```
 
 
-### Available Apps:
+### 🧪 Available Simulations on Website
 
-- `signal_generator_app.py`
-- `bode_simulator_app.py`
-- `fft_explorer_app.py`
-- `rc_visualizer_app.py`
-- `phasor_visualizer_app.py`
-- `phasor_diagram_visualizer_app.py`
+- Signal Generator  
+- Bode Plot Explorer  
+- FFT Analyzer  
+- RC Circuit Visualizer  
+- Phasor Diagram Tool  
 
 
 ---
@@ -138,10 +169,14 @@ streamlit run voltkit/streamlit_ui/signal_generator_app.py
 - `lowpass_filter_demo.py`
 - `fft_analysis.py`
 - `ac_vs_dc_example.py`
+- `signal_analysis_example.py`
+- `signal_transform_example.py`
+- `signal_stats_example.py`
 
 ## To run example files, use this method
 
 ```bash
+cd voltkit
 python examples/example_file_name.py
 ```
 
@@ -168,6 +203,16 @@ Want to contribute or request a feature?
 ## 📜 License
 
 This project is licensed under the [MIT License](./LICENSE).
+
+## Acknowledgements
+
+> NumPy - numerical computing
+> SciPy - scientific functions
+> Pandas - data handling
+> Streamlit - interactive web apps
+> Matplotlib - plotting
+
+Special thanks to the open-source community.
 
 ---
 

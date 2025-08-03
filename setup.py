@@ -5,7 +5,7 @@ with open("README.md", encoding="utf-8") as f:
 
 setup(
     name="voltkit",
-    version="1.0.0",
+    version="1.1.0",
     description="VoltKit: A Python toolkit for electrical and electronics engineering",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -17,7 +17,8 @@ setup(
         "numpy",
         "matplotlib",
         "scipy",
-        "streamlit"
+        "streamlit",
+        "pandas"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
