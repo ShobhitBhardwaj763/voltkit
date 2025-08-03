@@ -1,7 +1,7 @@
 
 # ⚡ VoltKit — The Open Toolkit for Electrical & Electronics Engineering
 
-![VoltKit Logo](https://voltkit-web.streamlit.app/~/+/media/8bde6074b183823d5f6a8a36b003542b1c958619087af9163f1e5aa1.png)
+![VoltKit Logo](https://voltkit-web.streamlit.app/~/+/media/477830ff6188ca269246b3e68e345ddff24cd145ae266fc35b00f735.jpg)
 
 VoltKit is an open-source Python library designed to make electrical and electronics engineering more practical, visual, and beginner-friendly.
 
