@@ -31,7 +31,7 @@ Electrical engineering is filled with complex formulas and repetitive calculatio
 | v0.5    | FFT Analysis, RC Step Response |
 | v1.0    | Phasor Math, RL/RC/RLC Phasor Diagrams, Time-domain Signal
 Generator
-| v1.0.1  | Real Signal Importing in (csv, wav) formets, Harmonics,scaling, Signal Stats, Plotting Signal |
+| v1.0.1  | Real Signal Importing in (csv, wav) formets, Harmonics, Scaling, Signal Stats, Plotting Signal |
  
 
 ---
