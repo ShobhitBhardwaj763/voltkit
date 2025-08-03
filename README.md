@@ -141,7 +141,10 @@ print("Total Harmonics Distortion": compute_thd(y_scaled))
 
 
 Visit our live **VoltKit Simulation Website** built with Streamlit:
-👉 ```[https://voltkit-web.streamlit.app](https://voltkit-web.streamlit.app)```
+
+```
+https://voltkit-web.streamlit.app
+```
 
 No installation needed, just open in your browser and visualize concepts!
 
